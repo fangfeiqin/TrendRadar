@@ -43,7 +43,15 @@ notification:
   feishu_batch_size: 29000 # 飞书消息分批大小（字节）
   batch_send_interval: 3 # 批次发送间隔（秒）
   feishu_message_separator: "━━━━━━━━━━━━━━━━━━━" # feishu 消息分割线
-
+webhooks: 
+     # 企业微信机器人配置
+     wework_url: "${{ secrets.WECHAT_WORK_WEBHOOK }}"  # 使用GitHub Secret
+     wework_msg_type: "markdown"  # 消息类型：markdown 或 text
+     
+     # 其他通知方式保持为空
+     feishu_url: ""
+     dingtalk_url: ""
+     telegram_bot_token: ""
   # 🕐 推送时间窗口控制（可选功能）
   # 用途：限制推送的时间范围，避免非工作时间打扰
   # 适用场景：
