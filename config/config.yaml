@@ -1,3 +1,11 @@
+keywords:
+  - 人工智能
+  - 科技新闻
+  - 热点事件
+  - A股
+  - 新能源汽车
+  - 教育改革
+  - 医疗健康
 app:
   version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
   show_version_update: true # 控制显示版本更新提示，如果 false，则不接受新版本提示
@@ -24,9 +32,6 @@ crawler:
 #   • 适用场景：避免重复信息干扰
 
 # 推送模式选择
-- 当日汇总
-- 当前榜单
-- 增量监控
 report:
   mode: "daily" # 可选: "daily"|"incremental"|"current"
   rank_threshold: 5 # 排名高亮阈值
